@@ -9,6 +9,7 @@ class Pemilihan extends CI_Controller{
 			redirect(base_url("login"));
 		}
     }
+	
     function index(){
 		$this->load->helper('url');
 		$this->load->model('m_mahasiswa');
