@@ -2,7 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>PIL-KB Home</title>
+<title>VotingKu Home</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -23,7 +23,7 @@
 
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<span class="navbar-toggler-icon"></span>
-					</button> <a class="navbar-brand" href="#">PIL-KB</a>
+					</button> <a class="navbar-brand" href="#">VotingKu</a>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="navbar-nav">
 							<li class="nav-item active">
@@ -31,6 +31,9 @@
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="pemilihan">Pilih KB</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="hasil_pemilihan">"Cek hasil Pemilihan"</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="kritik">Kritik dan Saran</a>
