@@ -25,20 +25,24 @@
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="navbar-toggler-icon"></span>
-                </button> <a class="navbar-brand" href="#">PIL-KB</a>
+                </button> <a class="navbar-brand" href="#">VotingKu</a>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="navbar-nav">
-							<li class="nav-item active">
-								<a class="nav-link" href="main">Home <span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="pemilihan">Pilih KB</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="kritik">Kritik dan Saran</a>
-							</li>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="main">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pemilihan">Pilih KB</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hasil_pemilihan">Cek hasil Pemilihan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kritik">Kritik dan Saran</a>
+                        </li>
 
-						</ul>
+                    </ul>
+
 
                 </div>
 
@@ -55,19 +59,19 @@
                         <div class="page-header">
                             <h2>Kritik</h2>
                         </div>
-                        
+
                         <form action=<?php echo base_url("kritik/simpan_kritik"); ?> method="post">
 
-                        
-                            
+
+
                             <div class="form-group">
                                 <label>Tuliskan Kritik Anda</label>
                                 <textarea class="form-control" rows="5" name="isi_kritik" id="isi_kritik"></textarea>
                             </div>
 
-                            
 
-                           
+
+
 
                             <input type="submit" class="btn btn-primary" name="submit" value="Kirim Kritik">
                         </form>
