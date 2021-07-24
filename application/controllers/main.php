@@ -4,6 +4,7 @@ class Main extends CI_Controller{
 
 	function __construct(){
 		parent::__construct();
+	
 	}
 	//coba
 	function index(){
@@ -19,14 +20,14 @@ class Main extends CI_Controller{
 		$data['posts'] = $posts;
 		$data['posts2'] = $posts2;
 		$data['posts3'] = $posts3;
-		
-		foreach($posts as $post):
-			if ($post->sudah_milih == 0) {
-				$this->load->view('home_pemilihan', $data);
-			} else {
-				$this->load->view('home_hasil',$data);
-			}
-		endforeach;
+		$this->load->view('home_pemilihan', $data);
+		// foreach($posts as $post):
+		// 	if ($post->sudah_milih == 0) {
+		// 		$this->load->view('home_pemilihan', $data);
+		// 	} else {
+		// 		$this->load->view('home_hasil',$data);
+		// 	}
+		// endforeach;
 		//  if (date_diff($posts3['end_time'], getDate()) > 0 ){
 		//  	$this->load->view('');
 		//  } else {
@@ -43,6 +44,7 @@ class Main extends CI_Controller{
 		$data['posts2'] = $posts2;
 		$this->load->view('pilih_kb',$data);
 	}
+
 	function vote(){
 		$this->load->helper('url');
 		$this->load->model('m_mahasiswa');
