@@ -17,6 +17,11 @@ class Navbar extends CI_Controller
         $this->load->view('kritik_mahasiswa');
     }
 
+    function cek_hasil_pemilihan()
+    {
+        $this->load->view('view_hasil_pemilihan');
+    }
+
     function kritik_saran_admin()
     {
         $this->load->view('kritik_admin');
