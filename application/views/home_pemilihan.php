@@ -25,7 +25,7 @@
 						<span class="navbar-toggler-icon"></span>
 					</button> <a class="navbar-brand" href="#">VotingKu</a>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="navbar-nav">
+						<ul class="navbar-nav">
 							<li class="nav-item active">
 								<a class="nav-link" href="main">Home <span class="sr-only">(current)</span></a>
 							</li>
