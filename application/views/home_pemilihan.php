@@ -38,11 +38,38 @@
 							<li class="nav-item">
 								<a class="nav-link" href="kritik">Kritik dan Saran</a>
 							</li>
-
 						</ul>
 
-
 					</div>
+
+					<ul class="navbar-nav">
+						<?php
+						$sid = $_SESSION;
+
+						if ($sid) : ?>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<?php
+									echo $_SESSION["NIM"];
+									//echo implode("|",$this->session->userdata);
+									?>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-dark overflow-visible" aria-labelledby="navbarDarkDropdownMenuLink">
+									<li><a class="dropdown-item" href="#">Logout</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li><a class="dropdown-item" href="#">Something else here</a></li>
+								</ul>
+							</li>
+
+						<?php else : ?>
+							<li class="nav-item dropdown">
+								<a class="nav-link" href='#' id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Login
+								</a>
+							</li>
+						<?php endif; ?>
+					</ul>
+
 
 				</nav>
 				<div class="jumbotron card card-block">
