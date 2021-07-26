@@ -41,7 +41,6 @@
 
 							<?php
 							
-							$sid = $_SESSION;
 
 							if ($this->session->userdata('status') == "login") : ?>
 								<li class="nav-item dropdown">
@@ -60,7 +59,7 @@
 
 							<?php else : ?>
 								<li class="nav-item dropdown">
-									<a class="nav-link" href='#' id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<a class="nav-link" href='login' id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 										Login
 									</a>
 								</li>
