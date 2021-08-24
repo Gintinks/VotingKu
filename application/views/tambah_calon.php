@@ -64,9 +64,21 @@
                         <p>Silahkan isi setiap data di bawah ini.</p>
                         <form action=<?php echo base_url("Mainadmin/simpan_calon"); ?> method="post">
 
+                        <div class="form-group">
+                                <label>NIM Ketua</label>
+                                <input type="text" name="ID_ketua" class="form-control" required>
+                            </div>    
                             <div class="form-group">
-                                <label>Nama</label>
+                                <label>NIM Wakil Ketua</label>
+                                <input type="text" name="NIM2" class="form-control" required>
+                            </div>    
+                        <div class="form-group">
+                                <label>Nama Ketua</label>
                                 <input type="text" name="nama" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Nama Wakil Ketua</label>
+                                <input type="text" name="nama2" class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label>Tempat Lahir</label>
@@ -82,8 +94,16 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Pilih jenis kelamin</label>
+                                <label>Pilih jenis kelamin Ketua</label>
                                 <select class="form-control" name="gender">
+                                    <option>Laki-laki</option>
+                                    <option>Perempuan</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Pilih jenis kelamin Wakil Ketua</label>
+                                <select class="form-control" name="gender2">
                                     <option>Laki-laki</option>
                                     <option>Perempuan</option>
                                 </select>
@@ -101,6 +121,22 @@
                                     <label class="custom-file-label" name="customFileInput" for="customFileInput">Select file</label>
                                 </div>
                                 
+                            </div>
+                            <div class="form-group">
+                                <label>Password Ketua</label>
+                                <input type="text" name="password" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Password Wakil Ketua</label>
+                                <input type="text" name="password2" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Ketua</label>
+                                <input type="text" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Wakil Ketua</label>
+                                <input type="text" name="email2" class="form-control" required>
                             </div>
 
                             <input type="submit" class="btn btn-primary" name="submit" value="Tambahkan">

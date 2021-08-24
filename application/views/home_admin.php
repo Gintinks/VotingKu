@@ -337,6 +337,10 @@
                         <div class="form-group">
                             <input class="form-control" type="date" name="tanggalAkhir" required>
                         </div>
+                        <h1 class="specialHead" style="color:black">Set Periode</h1>
+                        <div class="form-group">
+                            <input type="text" name="periode" class="form-control" required>
+                        </div>
                         <h1 style="color:black">
                             <p><strong>Current Time : <span id="time"></span>
                                     <span id="day"></span></strong></p>
@@ -360,7 +364,7 @@
                             <h2>List Calon Ketua BEM</h2>
                         </div>
                         <div class="col-sm-6">
-                            <a href="logout.php" class="btn btn-danger"> <span>Logout</span></a>
+                            <a href="mainAdmin/simpan_jumlah_vote" class="btn btn-danger"> <span>Cek Vote</span></a>
                             <a href="mainAdmin/tambah_calon" class="btn btn-primary"> <span>Tambah Calon KB</span></a>
                         </div>
                     </div>
@@ -408,46 +412,6 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="table-wrapper">
-                <div class="table-title">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h2>List Mahasiswa register</h2>
-                        </div>
-                        <div class="col-sm-6">
-
-                        </div>
-                    </div>
-                </div>
-                <table class="table table-striped table-hover">
-                    <thead>
-                        <tr>
-                            <th>NIM</th>
-                            <th>Nama</th>
-                            <th>Email</th>
-                            <th>Verifikasi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($posts3 as $post) : ?>
-                            <tr>
-                                <td> <?php echo $post->NIM; ?></td>
-                                <td> <?php echo $post->nama; ?></td>
-                                <td> <?php echo $post->email; ?></td>
-                                <td>
-                                    <form action="mainAdmin/verifikasi" method="post">
-                                        <button name="verifikasi" class="delete" value="<?php echo $post->NIM; ?>"><i class="material-icons" data-toggle="tooltip" title="Verifikasi">&#xE254;</i></button>
-                                    </form>
-                                </td>
-
-                            </tr>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
-
-            </div>
-        </div>
         <div class="row" style="padding-top:50px;"></div>
     </div>
 

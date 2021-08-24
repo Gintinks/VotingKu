@@ -54,53 +54,42 @@
         <div class="row" style="padding-top:50px;"></div>
 
         <div class="row" style="border: 5px solid #999;margin-left: 10px; ;margin-right: 10px; background-color: #4DE1FF;">
-            <div style="text-align: center;margin: auto;padding-bottom: 30px; ">
-                <h1>Pilih Calon yang Anda Inginkan</h1>
+            <div style="padding-top: 40px; ">
             </div>
-
-            <div class="row col-12">
-                <div class="row col-12">
-                    <?php $i = 1;
-                    foreach ($posts2 as $post) : ?>
-                        <div class="col-md-4" style="padding-bottom: 30px;">
-                            <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-					max-width: 300px;
-					margin: auto;
-                    text-align: center;">
-                                <div class="gallery">
-                                    <img src="assets/images/placeholder.jpg" alt="John" style="width:100%">
-                                </div>
-
-                                <p class="titlecard" style="padding-top: 10px;">Calon Ketua <?php echo $post->nama; ?>
-                                <p class="titlecard">
-                                <p class="titlecard">&
-                                <p class="titlecard">
-                                <p class="titlecard">Calon Wakil Ketua <?php echo $post->nama2; ?>
-                                <p class="titlecard">
-
-
-                                <div class="accordion" id="accordionExample">
-                                    <div class="card">
-                                        <div class="card-header" id="headingOne">
-                                            <h5 class="mb-0">
-                                                <form action="<?php echo base_url("main/vote"); ?>" method="post">
-                                                    <button name="ID_ketua" value="<?php echo $post->ID_ketua; ?>" class="btn btn-info"> <strong>PILIH</strong></button>
-                                                </form>
-                                            </h5>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    <?php
-                        $i++;
-                    endforeach;
-                    ?>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/placeholder.jpg" alt="John" style="width:100%" />
+                </div>
+                <div class="col-md-8">
+                    <dl>
+                        <dt>
+                            Deskripsi
+                        </dt>
+                        <dd>
+                        <?php echo $posts[0]->deskripsi; ?>
+                        </dd>
+                        <dt>
+                            Daftar Prestasi
+                        </dt>
+                        <dd>
+                        <?php echo $posts[0]->daftar_prestasi; ?>
+                        </dd>
+                        <dt>
+                            Malesuada porta
+                        </dt>
+                        <dd>
+                            Etiam porta sem malesuada magna mollis euismod.
+                        </dd>
+                        <dt>
+                            Felis euismod semper eget lacinia
+                        </dt>
+                        <dd>
+                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        </dd>
+                    </dl>
                 </div>
             </div>
+            
 
         </div>
 

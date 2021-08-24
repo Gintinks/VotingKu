@@ -24,7 +24,7 @@
             <!-- Codrops top bar -- testes dasofijaodsfjiafodsji-->
            
             <header>
-                <h1>Login ke <span>PIL-KB</span></h1>
+                <h1>Login ke <span>VotingKu</span></h1>
 				
             </header>
             <section>				
@@ -67,7 +67,7 @@
                                 </p>
                                 <p> 
                                     <label for="email" class="email" data-icon="e">Email </label>
-                                    <input id="Email" name="email" pattern="^[a-zA-Z0-9]+@student\.ub.ac.id$" required type="email" placeholder="Email"/>
+                                    <input id="Email" name="email"   placeholder="Email"/>
                                 </p>
                             
                                 <p> 

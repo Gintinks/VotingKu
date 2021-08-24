@@ -51,5 +51,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'main';
 $route['adminLogin']= 'adminLogin';
+$route["m_mahasiswa/set_data_verified/(:any)/(:any)"]="login/data_verified/$1/$2";
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
